@@ -19,7 +19,8 @@
     />
 
     <!-- Favicons -->
-    <img src="{% static "img/favicon.png" %}" class="card-img-top" alt="Portfolio5"/> <img src="{% static "img/apple-touch-icon.png" %}" rel="apple-touch-icon"/>
+    <link href="{% static "img/favicon.png" %}" rel="icon">
+    <link href="{% static "img/apple-touch-icon.png" %}" rel="apple-touch-icon"/>
 
     <!-- Google Fonts -->
     <link
@@ -28,9 +29,13 @@
     />
 
     <!-- Vendor CSS Files -->
-    <link href="{% static "vendor/animate.css/animate.min.css" %}" rel="stylesheet" /> <link href="{% static "vendor/aos/aos.css" %}" rel="stylesheet" /> <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet" />
-    <link href="{% static "vendor/bootstrap-icons/bootstrap-icons.css" %}" rel="stylesheet" /> <link href="{% static "vendor/boxicons/css/boxicons.min.css" %}" rel="stylesheet" /> <link href="{% static
-    "vendor/glightbox/css/glightbox.min.css" %}" rel="stylesheet" /> <link href="{% static "vendor/swiper/swiper-bundle.min.css" %}" rel="stylesheet" />
+    <link href="{% static "vendor/animate.css/animate.min.css" %}" rel="stylesheet" /> 
+    <link href="{% static "vendor/aos/aos.css" %}" rel="stylesheet" /> 
+    <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet" />
+    <link href="{% static "vendor/bootstrap-icons/bootstrap-icons.css" %}" rel="stylesheet" /> 
+    <link href="{% static "vendor/boxicons/css/boxicons.min.css" %}" rel="stylesheet" /> 
+    <link href="{% static "vendor/glightbox/css/glightbox.min.css" %}" rel="stylesheet" /> 
+    <link href="{% static "vendor/swiper/swiper-bundle.min.css" %}" rel="stylesheet" />
 
     <!-- Template Main CSS File -->
     <link href="{% static "css/style.css" %}" rel="stylesheet" />
@@ -52,8 +57,8 @@
     >
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-phone d-flex align-items-center"><span>+1 5589 55488 55</span></i>
-          <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 23PM</span></i>
+          <i class="bi bi-phone d-flex align-items-center"><span>+62 8180 5652 390</span></i>
+          <i class="bi bi-clock d-flex align-items-center ms-4"><span> Senin-Sabtu: 11.00 - 23.00 </span></i>
         </div>
 
         <div class="languages d-none d-md-flex align-items-center">
@@ -180,8 +185,9 @@
       >
         <div class="row">
           <div class="col-lg-8">
-            <h1>Welcome to <span>RestauranZha</span></h1>
-            <h2>Delivering great food for more than 18 years!</h2>
+            <h1>Selamat datang di <span>RestauranZha</span></h1>
+            <h2>Mau makan enak yang tidak bikin kantong bolong? cobain deh aneka masakan lokal di RestauranZha!
+            </h2>
 
             <div class="btns">
               <a
@@ -227,7 +233,7 @@
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              <div class="about-img"><img src="{% static "img/about.jpg" %}" alt="" /></div>
+              <div class="about-img"><img src="{% static "img/satu.jpg" %}" alt="" /></div>
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
               <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
@@ -257,8 +263,8 @@
           data-aos="fade-up"
         >
           <div class="section-title">
-            <h2>Why Us</h2>
-            <p>Why Choose Our Restaurant</p>
+            <h2>Mengapa Kami</h2>
+            <p>Mengapa Memilih Restoran Kami?</p>
           </div>
 
           <div class="row">
@@ -269,7 +275,7 @@
                 data-aos-delay="100"
               >
                 <span>01</span>
-                <h4>Lorem Ipsum</h4>
+                <h4>Makanan Berkelas</h4>
                 <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
               </div>
             </div>
@@ -281,7 +287,7 @@
                 data-aos-delay="200"
               >
                 <span>02</span>
-                <h4>Repellat Nihil</h4>
+                <h4>Pelayanan Berkualitas</h4>
                 <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
               </div>
             </div>
@@ -293,7 +299,7 @@
                 data-aos-delay="300"
               >
                 <span>03</span>
-                <h4>Ad ad velit qui</h4>
+                <h4>Harga Tidak Menguras</h4>
                 <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
               </div>
             </div>
@@ -313,7 +319,7 @@
         >
           <div class="section-title">
             <h2>Menu</h2>
-            <p>Check Our Tasty Menu</p>
+            <p>Periksa Menu Lezat Kami!</p>
           </div>
 
           <div
@@ -329,7 +335,7 @@
                 >
                   All
                 </li>
-                <li data-filter=".filter-starters">Starters</li>
+                <li data-filter=".filter-starters">Beginning</li>
                 <li data-filter=".filter-salads">Salads</li>
                 <li data-filter=".filter-specialty">Specialty</li>
               </ul>
@@ -913,7 +919,7 @@
                   data-gall="gallery-item"
                 >
                   <img
-                    src="a{% static "img/gallery/gallery-3.jpg" %}"
+                    src="{% static "img/gallery/gallery-3.jpg" %}"
                     alt=""
                     class="img-fluid"
                   />
@@ -1232,7 +1238,7 @@
           <div class="row">
             <div class="col-lg-3 col-md-6">
               <div class="footer-info">
-                <h3>Restaurantly</h3>
+                <h3>RestauranZha</h3>
                 <p>
                   A108 Adam Street <br />
                   NY 535022, USA<br /><br />
