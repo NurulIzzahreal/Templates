@@ -41,3 +41,13 @@ class Pemesan(models.Model):
 
     def __str__(self):
         return self.user.username
+
+class TableReservation(models.Model):
+    name = models.CharField(max_length=100)
+    number_of_guests = models.IntegerField()
+    reservation_date = models.DateField()
+    reservation_time = models.TimeField()
+    contact_number = models.CharField(max_length=20)
+
+    def __str__(self):
+        return f"Reservation for {self.name} on {self.reservation_date} at {self.reservation_time}"
